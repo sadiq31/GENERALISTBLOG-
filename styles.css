@@ -36,6 +36,10 @@ header{
     width: 1000px;
 }
 
+.hamburger, #toggle{
+    display: none;
+}
+
 .navItems{
     border-left: 2px solid #ececec;
     padding-inline: 1rem;
@@ -386,3 +390,97 @@ h4{
     border: 1.5px solid #ececec;
     font-size: larger;
 }
+
+@media(min-width: 260px) and  (max-width: 420px){
+    .hamburger{
+        display: block;
+        font-size: 1.3rem;
+    }
+    
+    .innerNav > h2{
+        margin-left: 0;
+    }
+    
+    .tabs{
+        width: 330px;
+        margin: auto;
+        /* border:  2px solid red; */
+        flex-direction: column;
+    }
+    
+    .inputCont{
+        border: 2px solid #fff;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .tabsLinks{
+        width: 100%;
+        gap: 1.3rem;
+    }
+    
+    .tabsLinks > a{
+    font-size: 8px;
+    }
+    
+    .tabsLinks > span {
+        padding-inline: .8rem;
+    }
+    
+    .innerNav{
+        /* border: 2px solid red; */
+        width: 330px;
+        margin: auto;
+    }
+    
+    .navRight {
+        display: none;
+        position: absolute;
+        width: 340px;
+        padding: 1.8rem;
+        top: 4.4rem;
+        right: 3px;
+        z-index: 1;
+        background-color: #4d5052;
+        opacity: 0.97;
+        border-bottom: 4px solid #fff;
+        transform: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    .navItems{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        border-left: none;
+    }
+
+    .navItems > a {
+        width: 100%;
+        color: #000;
+        font-size: 18px;
+        padding: 0.6rem;
+        text-align: left;
+        border-bottom: 4px solid #fff;
+    }
+
+    .subscribe{
+        margin-block: 1rem;
+    }
+
+    #toggle:checked + .navRight{
+        display: block;
+        transform: none;
+    }
+    
+    .generalistBlog{
+        /* border: 2px solid red; */
+        width: 330px;
+        padding-top: 6rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .authorCard{
+        box-shadow: .2rem .2rem 5px gray;
+    }
+    }
