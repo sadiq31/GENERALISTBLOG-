@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 10000;
+}
+
+.innerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.innerNav > h2{
+    margin-left: 4rem;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.navItems{
+    border-left: 2px solid #ececec;
+    padding-inline: 1rem;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.navItems > a, .tabsLinks > a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.subscribe{
+    border-left: 2px solid #ececec;
+}
+
+.subscribe > input{
+    padding: .5rem 1.4rem;
+    border: none;
+}
+
+.subscribe > input::placeholder, .inputCont > input::placeholder{
+    color: #bebebea5;
+    font-size: 12px;
+}
+
+.subscribe > button{
+    padding: .7rem 1.4rem;
+    border: none;
+    background-color: #069275;
+    color: #fff;
+    font-size: 10px;
+}
+
+.tabs{
+    border-block: 1.4px solid #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabLinks{
+    border-inline:2px solid #ececec ;
+    padding-left: .6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+
+
+.inputCont{
+    margin-left: 4rem;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.inputCont > input{
+    padding: .5rem .4rem;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.tabsLinks{
+    border-inline: 2px solid #ececec;
+    padding-left: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.tabLinks > a{
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+.tabLinks > span{
+    border-left: 2px solid #ececec;
+    border: 2px solid #ececec;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genLayout{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.generalistBlog{
+    margin-block:2rem ;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    padding-top: 4rem;
+}
+
+.authorPickCards{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.authorCardImg{
+    position: relative;
+}
+
+.authorCardImg > span{
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    font-weight: 700;
+    padding-inline: 2px;
+    text-transform: uppercase;
+}
+
+.authorCardImg{
+    width: 100%;
+    height: 30vh;
+}
+.authorCardImg > img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.authorContent > span{
+    background-color: #ccefe7;
+    color:#39ac8e;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.authorContent > h1{
+    text-transform: capitalize;
+    font-size:17px ;
+}
+
+/* .latestBanner{
+    border: 2px solid brown;
+} */
+
+.nfBG{
+    background-color: #ccefe7;
+    color:#39ac8e;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.imgCont{
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    z-index: -1;
+}
+.imgCont > span{
+    background-color: #fff;
+    position: absolute;
+    top: 0rem;
+    font-weight: 700;
+    font-size: small;
+}
+
+.imgCont > img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.latestContent{
+    background-color: #fff;
+    border: 2px solid #ececec;
+    max-width: 400px;
+    display: block;
+    margin: -3rem auto 0;
+    padding-inline: .3rem;
+    margin-top: 6rem;
+    height: 200px;
+}
+
+.latestContent > h1{
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.96rem;
+    text-transform: capitalize;
+    display: block;
+    /* padding-top: 10rem; */
+}
+
+.latestContent > P{
+    font-size: 11px;
+    font-weight: 300px;
+    text-align: center;
+    margin-block: .7rem auto;
+}
+
+.latestContent > span{
+    display: block;
+    width: 30px;
+    margin: 1rem auto;
+}
+/* .mostViewed{
+    border: 2px solid green;
+} */
+
+.mostviewed > h3{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.viewedCard{
+    border-bottom:2px solid #ececec;
+    margin-top: 1rem;
+    padding-block: 1rem;
+}
+
+.viewedCard > h3{
+    padding-top: 3px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.son{
+    display: flex;
+    gap: 50rem;
+    margin: auto;
+    padding: 4rem;
+    border-top: 2px solid #ececec;
+    padding-bottom: 3rem;
+}
+
+
+.son>h4{
+    display: block;
+    font-size: xx-small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.category{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.son1{
+   display: flex;
+    gap: 2rem;
+    /* border: 2px solid #ececec; */
+} 
+
+.son1>button{
+    padding: .7rem 1.4rem;
+    border: none;
+    background-color: #ececec;
+    color: #fff;
+    font-size: 15px;
+}
+.son1 >h4>span{
+    display: block;
+    padding-top: .6rem;
+    opacity: .4;
+    
+}
+
+h4{
+    color: black;
+}
+
+.boxs{
+    display: flex;
+    position: relative;
+    padding-top: 1.5rem;
+}
+.upRight>h6{
+   padding-left: 5.5rem;
+  margin-top: -1.5rem;
+  font-size: small;
+  font-weight: 700;
+}
+
+.box1{
+    /* border: 2px solid white; */
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: relative;
+
+}
+
+.box1>img{
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 1.2rem
+    
+}
+
+.box2>img{
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    /* margin-right: .6rem; */
+    padding-left: 1rem;
+}
+.box3>img{
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 1rem;
+}
+
+
+#stayup{
+    background-color: #ececec85;
+    border: 2px solid #ececec;
+    height: 25vh ;
+    width: 90%;
+    display: flex;
+    margin: 4.5rem;
+    gap: 21rem;
+    padding: .5rem 1.4rem;
+    margin-top: -rem;
+}
+
+.upRight>h1{
+    width: 60%;
+    margin-left: 1.9rem;
+}
+
+.upLeft{
+    padding-top: 2rem;
+    font-weight: 200;
+
+}
+.upLeft>.subscribe{
+    border: 1.5px solid #ececec;
+    font-size: larger;
+}
